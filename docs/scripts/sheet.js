@@ -158,7 +158,9 @@ class Drawer {
     // Re-enable group on desktop resize
     window.addEventListener("resize", () => {
       if (window.innerWidth >= 768) {
-        const wasGroups = this.drawer.querySelectorAll('.has-submenu[data-was-group="true"]');
+        const wasGroups = this.drawer.querySelectorAll(
+          '.has-submenu[data-was-group="true"]',
+        );
         wasGroups.forEach((group) => {
           group.classList.add("group");
         });
