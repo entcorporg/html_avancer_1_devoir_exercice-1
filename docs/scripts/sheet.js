@@ -118,8 +118,8 @@ class Drawer {
 
         if (!submenu) return;
 
-        // Check if this button was already expanded (before closing all)
-        const wasExpanded = button.getAttribute("aria-expanded") === "true";
+        // Check if this specific submenu is currently open
+        const isCurrentlyOpen = !submenu.classList.contains("hidden");
 
         // Close all submenus first
         const allSubmenus = this.drawer.querySelectorAll(".submenu-content");
@@ -130,8 +130,8 @@ class Drawer {
         allButtons.forEach((btn) => btn.setAttribute("aria-expanded", "false"));
         allChevrons.forEach((chev) => (chev.style.transform = "rotate(0deg)"));
 
-        // If it was collapsed, open it (true toggle behavior)
-        if (!wasExpanded) {
+        // Only reopen if it was closed (toggle behavior)
+        if (!isCurrentlyOpen) {
           submenu.classList.remove("hidden");
           button.setAttribute("aria-expanded", "true");
           if (chevron) chevron.style.transform = "rotate(180deg)";
