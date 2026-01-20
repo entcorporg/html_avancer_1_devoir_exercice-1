@@ -7,284 +7,217 @@
     <meta name="description" content="Page non trouvée - Le globule">
     <meta name="theme-color" content="#139c19">
     <title>404 - Page non trouvée | Le Globule</title>
-    <script src="/scripts/sheet.js" type="module"></script>
     <link rel="stylesheet" href="/css/standard.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body class="m-0 font-sans bg-linear-to-b from-000 to-888">
     <div class="w-full max-w-7xl mx-auto my-4 md:my-10 bg-blanc rounded-xl px-4 md:px-0">
-        <!-- Overlay for mobile nav -->
-        <div id="drawer-overlay"
-            class="fixed inset-0 bg-111 z-40 opacity-0 pointer-events-none transition-opacity duration-300 md:hidden">
-        </div>
         <header class="text-center p-5 pb-12">
-            <div class="flex items-center justify-between md:block">
-                <h1 class="text-139c19 text-5xl md:text-7xl font-bold text-shadow-lg shadow-000">
-                    Le globule
-                </h1> <!-- Hamburger button for mobile --> <button id="drawer-trigger"
-                    class="md:hidden p-2 text-139c19 hover:bg-gray-100 rounded-lg" aria-label="Ouvrir le menu"> <svg
-                        xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg> </button>
-            </div>
-            <nav id="nav-drawer"
-                class="fixed md:static top-0 left-0 right-0 w-full md:w-auto -translate-y-full md:translate-y-0 transition-transform duration-300 ease-in-out bg-transparent md:bg-transparent z-40 md:z-auto md:pt-0 max-h-screen md:max-h-none overflow-y-auto md:overflow-visible text-left mt-0 md:mt-2.5 rounded-none md:rounded-full"
-                aria-label="Navigation principale"> <!-- Close button for mobile --> <button id="drawer-close"
-                    class="absolute top-4 right-4 p-2 z-50 rounded-lg hover:bg-111 md:hidden"
-                    aria-label="Fermer le menu"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                        <line x1="6" y1="6" x2="18" y2="18"></line>
-                    </svg> </button>
-                <div class="bg-000 rounded-none md:rounded-full px-4 md:px-0">
-                    <ul class="list-none p-0 my-1.5 text-center flex flex-col md:flex-row md:justify-start">
-                        <li class="inline-block relative"> <a href="/"
-                                class="menu-link inline-block py-4 px-5 hover:underline text-blanc text-shadow-000">Accueil</a>
-                        </li>
-                        <li class="has-submenu group inline-block relative w-full md:w-auto"> <button
-                                class="submenu-toggle menu-link flex items-center justify-center gap-2 w-full md:w-auto py-4 px-5 hover:underline hover:bg-linear-to-b from-19b123 to-139c19 text-blanc text-shadow-000 cursor-pointer border-0 bg-transparent"
-                                aria-expanded="false" aria-haspopup="true" data-submenu="submenu-1"> <span>Tous nos
-                                    choix</span> <svg class="chevron md:hidden transition-transform duration-200"
-                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <polyline points="6 9 12 15 18 9"></polyline>
-                                </svg> </button>
-                            <div id="submenu-1"
-                                class="submenu-content hidden md:group-hover:block static md:absolute left-0 md:-left-1.5 top-auto md:top-14 w-full md:w-lg z-50">
-                                <div class="block bg-444 px-1.5">
-                                    <div class="grid grid-cols-2">
-                                        <div
-                                            class="w-full p-5 text-blanc bg-linear-to-b from-19b123 to-139c19 text-center">
-                                            <p class="text-lg font-bold text-000 my-2.5">
-                                                Nos choix 1
-                                            </p>
-                                            <ul>
-                                                <li> <a href="/choix/1/1">Choix 1.1</a></li>
-                                                <li><a href="/choix/1/2">Choix 1.2</a></li>
-                                                <li><a href="/choix/1/3">Choix 1.3</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="flex justify-end items-end w-full">
-                                            <picture> <!-- Version WebP (moderne, léger) -->
-                                                <source type="image/webp"
-                                                    srcset="/img/menu-01-480w.webp 480w, /img/menu-01-768w.webp 768w, /img/menu-01.webp 280w"
-                                                    sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, {width}px">
-                                                <!-- Version JPG (fallback pour anciens navigateurs) -->
-                                                <source type="image/jpeg"
-                                                    srcset="/img/menu-01-480w.jpg 480w, /img/menu-01-768w.jpg 768w, /img/menu-01.jpg 280w"
-                                                    sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, {width}px">
-                                                <!-- Image par défaut --> <img src="/img/menu-01.jpg" alt="Nos choix 1"
-                                                    width="280" height="176" loading="eager" class="w-full h-full">
-                                            </picture>
-                                        </div>
+            <h1 class="text-139c19 text-7xl font-bold text-shadow-lg shadow-000">
+                Le globule
+            </h1>
+            <nav class="bg-000 rounded-full mt-2.5" aria-label="Navigation principale">
+                <ul class="list-none p-0 my-1.5 text-center table-layout">
+                    <li class="inline-block relative table-cell-layout">
+                        <a href="/"
+                            class="menu-link inline-block py-4 px-5 hover:underline text-blanc text-shadow-000 hover:bg-linear-to-b from-19b123 to-139c19 rounded-l-full">
+                            Accueil
+                        </a>
+                    </li>
+                    <li class="has-submenu inline-block relative table-cell-layout">
+                        <a href="#"
+                            class="menu-link inline-block py-4 px-5 hover:underline hover:bg-linear-to-b from-19b123 to-139c19 text-blanc text-shadow-000">
+                            Tous nos choix
+                        </a>
+                        <div class="submenu-content hidden absolute left-0 top-14 w-lg z-50" style="left: -6px;">
+                            <div class="block bg-444 px-1.5">
+                                <div class="cols-2">
+                                    <div
+                                        class="col w-50 p-5 text-blanc bg-linear-to-b from-19b123 to-139c19 text-center inline-block-top align-top">
+                                        <p class="text-lg font-bold text-000 my-2.5">Nos choix 1</p>
+                                        <ul>
+                                            <li><a href="/choix/1/1">Choix 1.1</a></li>
+                                            <li><a href="/choix/1/2">Choix 1.2</a></li>
+                                            <li><a href="/choix/1/3">Choix 1.3</a></li>
+                                        </ul>
                                     </div>
-                                </div>
-                                <div class="block bg-444 px-1.5">
-                                    <div class="grid grid-cols-2">
-                                        <div
-                                            class="w-full p-5 text-blanc bg-linear-to-b from-19b123 to-139c19 text-center">
-                                            <p class="text-lg font-bold text-000 my-2.5">
-                                                Nos choix 2
-                                            </p>
-                                            <ul>
-                                                <li><a href="/choix/2/1">Choix 2.1</a></li>
-                                                <li><a href="/choix/2/2">Choix 2.2</a></li>
-                                                <li><a href="/choix/2/3">Choix 2.3</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="flex justify-end items-end w-full">
-                                            <picture> <!-- Version WebP (moderne, léger) -->
-                                                <source type="image/webp"
-                                                    srcset="/img/menu-03-480w.webp 480w, /img/menu-03-768w.webp 768w, /img/menu-03.webp 280w"
-                                                    sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, {width}px">
-                                                <!-- Version JPG (fallback pour anciens navigateurs) -->
-                                                <source type="image/jpeg"
-                                                    srcset="/img/menu-03-480w.jpg 480w, /img/menu-03-768w.jpg 768w, /img/menu-03.jpg 280w"
-                                                    sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, {width}px">
-                                                <!-- Image par défaut --> <img src="/img/menu-03.jpg" alt="Nos choix 2"
-                                                    width="280" height="176" loading="eager" class="w-full h-full">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="block bg-444 px-1.5 pb-1.5">
-                                    <div class="grid grid-cols-2">
-                                        <div
-                                            class="w-full p-5 text-blanc bg-linear-to-b from-19b123 to-139c19 text-center">
-                                            <p class="text-lg font-bold text-000 my-2.5">
-                                                Nos choix 3
-                                            </p>
-                                            <ul>
-                                                <li><a href="/choix/3/1">Choix 3.1</a></li>
-                                                <li><a href="/choix/3/2">Choix 3.2</a></li>
-                                                <li><a href="/choix/3/3">Choix 3.3</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="flex justify-end items-end w-full">
-                                            <picture> <!-- Version WebP (moderne, léger) -->
-                                                <source type="image/webp"
-                                                    srcset="/img/menu-02-480w.webp 480w, /img/menu-02-768w.webp 768w, /img/menu-02.webp 280w"
-                                                    sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, {width}px">
-                                                <!-- Version JPG (fallback pour anciens navigateurs) -->
-                                                <source type="image/jpeg"
-                                                    srcset="/img/menu-02-480w.jpg 480w, /img/menu-02-768w.jpg 768w, /img/menu-02.jpg 280w"
-                                                    sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, {width}px">
-                                                <!-- Image par défaut --> <img src="/img/menu-02.jpg" alt="Nos choix 3"
-                                                    width="280" height="176" loading="eager" class="w-full h-full">
-                                            </picture>
-                                        </div>
+                                    <div class="col w-50 inline-block-top align-end text-right">
+                                        <img src="/img/menu-01.jpg" alt="Nos choix 1" width="280" height="176"
+                                            loading="eager" class="w-full h-full">
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li class="has-submenu group inline-block relative w-full md:w-auto"> <button
-                                class="submenu-toggle menu-link flex items-center justify-center gap-2 w-full md:w-auto py-4 px-5 hover:underline hover:bg-linear-to-b from-19b123 to-139c19 text-blanc text-shadow-000 cursor-pointer border-0 bg-transparent"
-                                aria-expanded="false" aria-haspopup="true" data-submenu="submenu-2"> <span>Nos triangles
-                                    ronds</span> <svg class="chevron md:hidden transition-transform duration-200"
-                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <polyline points="6 9 12 15 18 9"></polyline>
-                                </svg> </button>
-                            <div id="submenu-2"
-                                class="submenu-content hidden md:group-hover:block static md:absolute left-0 md:-left-1.5 top-auto md:top-14 w-full md:w-lg z-50">
-                                <div class="block bg-444 px-1.5">
-                                    <div class="grid grid-cols-2">
-                                        <div
-                                            class="w-full p-5 text-blanc bg-linear-to-b from-19b123 to-139c19 text-center">
-                                            <p class="text-lg font-bold text-000 my-2.5">
-                                                Nos triangles 1
-                                            </p>
-                                            <ul>
-                                                <li> <a href="/triangle/1/1">Triangle 1.1</a></li>
-                                                <li><a href="/triangle/1/2">Triangle 1.2</a></li>
-                                                <li><a href="/triangle/1/3">Triangle 1.3</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="flex justify-end items-end w-full">
-                                            <picture> <!-- Version WebP (moderne, léger) -->
-                                                <source type="image/webp"
-                                                    srcset="/img/menu-04-480w.webp 480w, /img/menu-04-768w.webp 768w, /img/menu-04.webp 280w"
-                                                    sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, {width}px">
-                                                <!-- Version JPG (fallback pour anciens navigateurs) -->
-                                                <source type="image/jpeg"
-                                                    srcset="/img/menu-04-480w.jpg 480w, /img/menu-04-768w.jpg 768w, /img/menu-04.jpg 280w"
-                                                    sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, {width}px">
-                                                <!-- Image par défaut --> <img src="/img/menu-04.jpg"
-                                                    alt="Nos triangles 1" width="280" height="176" loading="eager"
-                                                    class="w-full h-full">
-                                            </picture>
-                                        </div>
+                            <div class="block bg-444 px-1.5">
+                                <div class="cols-2">
+                                    <div
+                                        class="col w-50 p-5 text-blanc bg-linear-to-b from-19b123 to-139c19 text-center inline-block-top align-top">
+                                        <p class="text-lg font-bold text-000 my-2.5">Nos choix 2</p>
+                                        <ul>
+                                            <li><a href="/choix/2/1">Choix 2.1</a></li>
+                                            <li><a href="/choix/2/2">Choix 2.2</a></li>
+                                            <li><a href="/choix/2/3">Choix 2.3</a></li>
+                                        </ul>
                                     </div>
-                                </div>
-                                <div class="block bg-444 px-1.5">
-                                    <div class="grid grid-cols-2">
-                                        <div
-                                            class="w-full p-5 text-blanc bg-linear-to-b from-19b123 to-139c19 text-center">
-                                            <p class="text-lg font-bold text-000 my-2.5">
-                                                Nos surtriangles 2
-                                            </p>
-                                            <ul>
-                                                <li><a href="/surtriangle/1/1">Surtriangle 1.1</a></li>
-                                                <li><a href="/surtriangle/1/2">Surtriangle 1.2</a></li>
-                                                <li><a href="/surtriangle/1/3">Surtriangle 1.3</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="flex justify-end items-end w-full">
-                                            <picture> <!-- Version WebP (moderne, léger) -->
-                                                <source type="image/webp"
-                                                    srcset="/img/menu-06-480w.webp 480w, /img/menu-06-768w.webp 768w, /img/menu-06.webp 280w"
-                                                    sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, {width}px">
-                                                <!-- Version JPG (fallback pour anciens navigateurs) -->
-                                                <source type="image/jpeg"
-                                                    srcset="/img/menu-06-480w.jpg 480w, /img/menu-06-768w.jpg 768w, /img/menu-06.jpg 280w"
-                                                    sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, {width}px">
-                                                <!-- Image par défaut --> <img src="/img/menu-06.jpg"
-                                                    alt="Nos surtriangles 2" width="280" height="176" loading="eager"
-                                                    class="w-full h-full">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="block bg-444 px-1.5 pb-1.5">
-                                    <div class="grid grid-cols-2">
-                                        <div
-                                            class="w-full p-5 text-blanc bg-linear-to-b from-19b123 to-139c19 text-center">
-                                            <p class="text-lg font-bold text-000 my-2.5">
-                                                Nos surtriangles 3
-                                            </p>
-                                            <ul>
-                                                <li><a href="/surtriangle/2/1">Surtriangle 3.1</a></li>
-                                                <li><a href="/surtriangle/2/2">Surtriangle 3.2</a></li>
-                                                <li><a href="/surtriangle/2/3">Surtriangle 3.3</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="flex justify-end items-end w-full">
-                                            <picture> <!-- Version WebP (moderne, léger) -->
-                                                <source type="image/webp"
-                                                    srcset="/img/menu-05-480w.webp 480w, /img/menu-05-768w.webp 768w, /img/menu-05.webp 280w"
-                                                    sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, {width}px">
-                                                <!-- Version JPG (fallback pour anciens navigateurs) -->
-                                                <source type="image/jpeg"
-                                                    srcset="/img/menu-05-480w.jpg 480w, /img/menu-05-768w.jpg 768w, /img/menu-05.jpg 280w"
-                                                    sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, {width}px">
-                                                <!-- Image par défaut --> <img src="/img/menu-05.jpg"
-                                                    alt="Nos surtriangles 3" width="280" height="176" loading="eager"
-                                                    class="w-full h-full">
-                                            </picture>
-                                        </div>
+                                    <div class="col w-50 inline-block-top align-end text-right">
+                                        <img src="/img/menu-03.jpg" alt="Nos choix 2" width="280" height="176"
+                                            loading="eager" class="w-full h-full">
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li class="inline-block relative"> <a href="/contacts"
-                                class="menu-link inline-block py-4 px-5 hover:underline text-blanc text-shadow-000">Contacts</a>
-                        </li>
-                    </ul>
-                </div>
+                            <div class="block bg-444 px-1.5 pb-1.5">
+                                <div class="cols-2">
+                                    <div
+                                        class="col w-50 p-5 text-blanc bg-linear-to-b from-19b123 to-139c19 text-center inline-block-top align-top">
+                                        <p class="text-lg font-bold text-000 my-2.5">Nos choix 3</p>
+                                        <ul>
+                                            <li><a href="/choix/3/1">Choix 3.1</a></li>
+                                            <li><a href="/choix/3/2">Choix 3.2</a></li>
+                                            <li><a href="/choix/3/3">Choix 3.3</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col w-50 inline-block-top align-end text-right">
+                                        <img src="/img/menu-02.jpg" alt="Nos choix 3" width="280" height="176"
+                                            loading="eager" class="w-full h-full">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="has-submenu inline-block relative table-cell-layout">
+                        <a href="#"
+                            class="menu-link inline-block py-4 px-5 hover:underline hover:bg-linear-to-b from-19b123 to-139c19 text-blanc text-shadow-000">
+                            Nos triangles ronds
+                        </a>
+                        <div class="submenu-content hidden absolute left-0 top-14 w-lg z-50" style="left: -6px;">
+                            <div class="block bg-444 px-1.5">
+                                <div class="cols-2">
+                                    <div
+                                        class="col w-50 p-5 text-blanc bg-linear-to-b from-19b123 to-139c19 text-center inline-block-top align-top">
+                                        <p class="text-lg font-bold text-000 my-2.5">Nos triangles 1</p>
+                                        <ul>
+                                            <li><a href="/triangle/1/1">Triangle 1.1</a></li>
+                                            <li><a href="/triangle/1/2">Triangle 1.2</a></li>
+                                            <li><a href="/triangle/1/3">Triangle 1.3</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col w-50 inline-block-top align-end text-right">
+                                        <img src="/img/menu-04.jpg" alt="Nos triangles 1" width="280" height="176"
+                                            loading="eager" class="w-full h-full">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block bg-444 px-1.5">
+                                <div class="cols-2">
+                                    <div
+                                        class="col w-50 p-5 text-blanc bg-linear-to-b from-19b123 to-139c19 text-center inline-block-top align-top">
+                                        <p class="text-lg font-bold text-000 my-2.5">Nos surtriangles 2</p>
+                                        <ul>
+                                            <li><a href="/surtriangle/1/1">Surtriangle 1.1</a></li>
+                                            <li><a href="/surtriangle/1/2">Surtriangle 1.2</a></li>
+                                            <li><a href="/surtriangle/1/3">Surtriangle 1.3</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col w-50 inline-block-top align-end text-right">
+                                        <img src="/img/menu-06.jpg" alt="Nos surtriangles 2" width="280" height="176"
+                                            loading="eager" class="w-full h-full">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block bg-444 px-1.5 pb-1.5">
+                                <div class="cols-2">
+                                    <div
+                                        class="col w-50 p-5 text-blanc bg-linear-to-b from-19b123 to-139c19 text-center inline-block-top align-top">
+                                        <p class="text-lg font-bold text-000 my-2.5">Nos surtriangles 3</p>
+                                        <ul>
+                                            <li><a href="/surtriangle/2/1">Surtriangle 3.1</a></li>
+                                            <li><a href="/surtriangle/2/2">Surtriangle 3.2</a></li>
+                                            <li><a href="/surtriangle/2/3">Surtriangle 3.3</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col w-50 inline-block-top align-end text-right">
+                                        <img src="/img/menu-05.jpg" alt="Nos surtriangles 3" width="280" height="176"
+                                            loading="eager" class="w-full h-full">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li
+                        class="inline-block relative table-cell-layout hover:underline hover:bg-linear-to-b from-19b123 to-139c19 text-blanc text-shadow-000">
+                        <a href="/contacts"
+                            class="menu-link inline-block py-4 px-5 hover:underline text-blanc text-shadow-000">
+                            Contacts
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </header>
-        <main class="flex flex-col items-center justify-center py-20 px-6 text-center">
-            <div class="max-w-2xl">
-                <h1 class="text-139c19 text-8xl md:text-9xl font-bold mb-8">404</h1>
-                <h2 class="text-444 text-3xl md:text-4xl font-semibold mb-6">
-                    Page non trouvée
-                </h2>
-                <p class="text-888 text-lg md:text-xl mb-10 leading-relaxed">
-                    Oups ! La page que vous recherchez semble introuvable. Elle a
-                    peut-être été déplacée, supprimée ou n'a jamais existé.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center"> <a href="/"
-                        class="inline-block px-8 py-3 bg-139c19 text-blanc font-semibold rounded-lg hover:bg-19b123 transition-colors duration-200 shadow-md hover:shadow-lg">
-                        Retour à l'accueil
-                    </a> <a href="/contacts"
-                        class="inline-block px-8 py-3 border-2 border-139c19 text-139c19 font-semibold rounded-lg hover:bg-139c19 hover:text-blanc transition-colors duration-200">
-                        Nous contacter
-                    </a> </div>
-                <div class="mt-16 text-9c9c9c"> <svg class="mx-auto w-32 h-32 md:w-40 md:h-40 opacity-30"
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                            d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                        </path>
-                    </svg> </div>
+        <main class="center-container py-20 px-6 text-center">
+            <div class="center-content">
+                <div class="max-w-2xl inline-block">
+                    <h1 class="text-139c19 text-8xl md:text-9xl font-bold mb-8">
+                        404
+                    </h1>
+                    <h2 class="text-444 text-3xl md:text-4xl font-semibold mb-6">
+                        Page non trouvée
+                    </h2>
+                    <p class="text-888 text-lg md:text-xl mb-10 leading-relaxed">
+                        Oups ! La page que vous recherchez semble introuvable. Elle a
+                        peut-être été déplacée, supprimée ou n'a jamais existé.
+                    </p>
+                    <div class="btn-group">
+                        <a href="/"
+                            class="inline-block px-8 py-3 bg-139c19 text-blanc font-semibold rounded-lg hover:bg-19b123 transition-colors duration-200 shadow-md hover:shadow-lg">
+                            Retour à l'accueil
+                        </a>
+                        <a href="/contacts"
+                            class="inline-block px-8 py-3 border-2 border-139c19 text-139c19 font-semibold rounded-lg hover:bg-139c19 hover:text-blanc transition-colors duration-200">
+                            Nous contacter
+                        </a>
+                    </div>
+                    <div class="mt-16 text-9c9c9c">
+                        <svg class="mx-auto w-32 h-32 md:w-40 md:h-40 opacity-30" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
             </div>
         </main>
-        <footer class="border-t-2 border-139c19 mx-2 md:mx-5 py-2.5 text-center">
-            <nav class="flex flex-col sm:flex-row sm:justify-center gap-2 sm:gap-2.5"
-                aria-label="Liens du pied de page"> <a href="#"
-                    class="relative inline-block mx-0 sm:mx-2.5 py-2 px-3 md:px-4 bg-linear-to-b from-139c19 to-19b123 text-blanc rounded-xl hover:text-000 hover:bg-none hover:bg-15a51d80 transition-all text-sm md:text-base">lien
-                    footer</a> <a href="#"
-                    class="relative inline-block mx-0 sm:mx-2.5 py-2 px-3 md:px-4 bg-linear-to-b from-139c19 to-19b123 text-blanc rounded-xl hover:text-000 hover:bg-none hover:bg-15a51d80 transition-all text-sm md:text-base">lien
-                    footer</a> <a href="#"
-                    class="relative inline-block mx-0 sm:mx-2.5 py-2 px-3 md:px-4 bg-linear-to-b from-139c19 to-19b123 text-blanc rounded-xl hover:text-000 hover:bg-none hover:bg-15a51d80 transition-all text-sm md:text-base">lien
-                    footer</a> <a href="#"
-                    class="relative link inline-block mx-0 sm:mx-2.5 py-2 px-3 md:px-4 bg-linear-to-b from-139c19 to-19b123 text-blanc rounded-xl hover:text-000 hover:bg-none hover:bg-15a51d80 transition-all text-sm md:text-base">lien
-                    footer</a> </nav>
+        <footer class="border-t-2 border-139c19 mx-5 py-2.5 text-center">
+            <nav class="table-layout-center" aria-label="Liens du pied de page">
+                <a href="#"
+                    class="relative inline-block mx-2.5 py-2 px-4 bg-linear-to-b from-139c19 to-19b123 text-blanc rounded-xl hover:text-000 hover:bg-none hover:bg-15a51d80 transition-all text-base">lien
+                    footer</a>
+                <a href="#"
+                    class="relative inline-block mx-2.5 py-2 px-4 bg-linear-to-b from-139c19 to-19b123 text-blanc rounded-xl hover:text-000 hover:bg-none hover:bg-15a51d80 transition-all text-base">lien
+                    footer</a>
+                <a href="#"
+                    class="relative inline-block mx-2.5 py-2 px-4 bg-linear-to-b from-139c19 to-19b123 text-blanc rounded-xl hover:text-000 hover:bg-none hover:bg-15a51d80 transition-all text-base">lien
+                    footer</a>
+                <a href="#"
+                    class="relative link inline-block mx-2.5 py-2 px-4 bg-linear-to-b from-139c19 to-19b123 text-blanc rounded-xl hover:text-000 hover:bg-none hover:bg-15a51d80 transition-all text-base">lien
+                    footer</a>
+            </nav>
         </footer>
     </div>
 </body>
