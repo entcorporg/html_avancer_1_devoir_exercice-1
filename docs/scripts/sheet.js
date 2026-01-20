@@ -130,6 +130,8 @@ class Drawer {
           menu.classList.add("hidden");
           // Force display none on mobile to override any hover states
           menu.style.display = "none";
+          // Remove pointer events to prevent hover interference
+          menu.style.pointerEvents = "auto";
         });
         allButtons.forEach((btn) => btn.setAttribute("aria-expanded", "false"));
         allChevrons.forEach((chev) => (chev.style.transform = "rotate(0deg)"));
@@ -142,6 +144,31 @@ class Drawer {
           if (chevron) chevron.style.transform = "rotate(180deg)";
         }
       });
+    });
+
+    // Disable group hover behavior on mobile by removing group class
+    if (window.innerWidth < 768) {
+      const groups = this.drawer.querySelectorAll(".has-submenu.group");
+      groups.forEach((group) => {
+        group.classList.remove("group");
+        group.setAttribute("data-was-group", "true");
+      });
+    }
+
+    // Re-enable group on desktop resize
+    window.addEventListener("resize", () => {
+      if (window.innerWidth >= 768) {
+        const wasGroups = this.drawer.querySelectorAll('.has-submenu[data-was-group="true"]');
+        wasGroups.forEach((group) => {
+          group.classList.add("group");
+        });
+      } else {
+        const groups = this.drawer.querySelectorAll(".has-submenu.group");
+        groups.forEach((group) => {
+          group.classList.remove("group");
+          group.setAttribute("data-was-group", "true");
+        });
+      }
     });
   }
 
