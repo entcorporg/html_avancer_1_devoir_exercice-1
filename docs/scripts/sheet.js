@@ -126,13 +126,18 @@ class Drawer {
         const allButtons = this.drawer.querySelectorAll(".submenu-toggle");
         const allChevrons = this.drawer.querySelectorAll(".chevron");
 
-        allSubmenus.forEach((menu) => menu.classList.add("hidden"));
+        allSubmenus.forEach((menu) => {
+          menu.classList.add("hidden");
+          // Force display none on mobile to override any hover states
+          menu.style.display = "none";
+        });
         allButtons.forEach((btn) => btn.setAttribute("aria-expanded", "false"));
         allChevrons.forEach((chev) => (chev.style.transform = "rotate(0deg)"));
 
         // Only reopen if it was closed (toggle behavior)
         if (!isCurrentlyOpen) {
           submenu.classList.remove("hidden");
+          submenu.style.display = "block";
           button.setAttribute("aria-expanded", "true");
           if (chevron) chevron.style.transform = "rotate(180deg)";
         }
