@@ -818,6 +818,10 @@ ol {
     opacity: 0.3;
 }
 
+.opacity-100 {
+    opacity: 1;
+}
+
 /* Pointer Events */
 .pointer-events-none {
     pointer-events: none;
@@ -849,8 +853,20 @@ ol {
 }
 
 /* Transform */
+.transform {
+    transform: none;
+}
+
+.translate-x-0 {
+    transform: translateX(0);
+}
+
 .translate-x-full {
     transform: translateX(100%);
+}
+
+.translate-y-0 {
+    transform: translateY(0);
 }
 
 .-translate-y-full {
