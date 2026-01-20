@@ -106,6 +106,9 @@ class Drawer {
 
     toggleButtons.forEach((button) => {
       button.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+
         // Only toggle on mobile
         if (window.innerWidth >= 768) return;
 
@@ -115,14 +118,20 @@ class Drawer {
 
         if (!submenu) return;
 
-        // Toggle submenu
-        const isOpen = !submenu.classList.contains("hidden");
+        // Check if submenu is currently visible
+        const isHidden = submenu.classList.contains("hidden");
 
-        if (isOpen) {
-          submenu.classList.add("hidden");
-          button.setAttribute("aria-expanded", "false");
-          if (chevron) chevron.style.transform = "rotate(0deg)";
-        } else {
+        // Close all other submenus first
+        const allSubmenus = this.drawer.querySelectorAll(".submenu-content");
+        const allButtons = this.drawer.querySelectorAll(".submenu-toggle");
+        const allChevrons = this.drawer.querySelectorAll(".chevron");
+
+        allSubmenus.forEach((menu) => menu.classList.add("hidden"));
+        allButtons.forEach((btn) => btn.setAttribute("aria-expanded", "false"));
+        allChevrons.forEach((chev) => (chev.style.transform = "rotate(0deg)"));
+
+        // Toggle current submenu
+        if (isHidden) {
           submenu.classList.remove("hidden");
           button.setAttribute("aria-expanded", "true");
           if (chevron) chevron.style.transform = "rotate(180deg)";
